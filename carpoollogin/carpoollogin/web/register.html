@@ -1,0 +1,147 @@
+<html>
+<head>
+    <title>Register</title>
+<style>
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url("white-powerpoint-background-ninja-turtletechrepairs-co-with-simple-background-designs-for-powerpoint-png.jpg");
+   background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+#login-box
+{
+    position: relative;
+    margin: 6% auto;
+    height: 900px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 500px;
+    height: 600px;    
+}
+
+h1
+{
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"]
+{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 320px;
+    height: 42px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input[type="submit"]
+{
+    margin-bottom: 38px;
+    width: 220px;
+    height: 42px;
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+    
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+    background: #ff5722;
+    transition: 0.2s ease;
+}
+.button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.button:hover {
+    background-color: #ff5722;
+}
+
+
+</style>
+</head>
+<body>
+
+    <div id="login-box">
+      <div class="left-box">
+        <h1>Register your ride here</h1>
+          <form action = "register.jsp" method = "POST">
+          <input type="text" name="name" placeholder="name" required>
+          <input type="text" name="mobile_number" placeholder="mobile_number" required>
+          <input type="text" name="starting_point" placeholder="starting_point" required>
+          <input type="text" name="going_to" placeholder="going_to" required>
+          <input type="text" name ="car_number" placeholder = "car_number" required>          
+          <input type="text" name ="Lisense" placeholder = "Lisense" required>          
+          <p>Date:</p><input type="date" name ="Date" placeholder = "Date" required>  
+          <p>Time:</p><input type ="time" name="Time" placeholder="Time" required>
+          <p>Gender</p>
+          <input type="radio" name="Gender" value="female"> Female
+           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="Gender" value="Male">  Male <br>
+           <br>
+           <p>Car_type</p>
+           <input type="radio" name="car_type" value="SUV"> SUV
+           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+           <input type="radio" name="car_type" value="Hatchback">  Hatchback<br>
+ <input type="radio" name="car_type" value="Sedan"> Sedan
+           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<br>
+<br>
+<br>
+<br>
+<input type="submit" name="signup-button" value="Submit"/> 
+          </form>  
+        <p align="center">By clicking to the <span style="text-color: #f44336">Registered carpool you can see the registered entries of carpool</span></p>
+        <a href="retrieve2.jsp"><button class="button">Registered carpool</button></a>
+
+      </body>    
+</html>
+
+
+
+
+
+
+
+
