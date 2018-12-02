@@ -1,0 +1,114 @@
+<html>
+<head>
+<style>
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url("mark-good-evaluation-form-pencil-ticked-checkbox-red-white-background-36012105.jpg");
+   background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+#login-box
+{
+    position: relative;
+    margin: 6% auto;
+    height: 650px;
+    width: 500px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 400px;
+    height: 500px;    
+}
+
+h1
+{
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"]
+{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 320px;
+    height: 42px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input[type="submit"]
+{
+    margin-bottom: 38px;
+    width: 220px;
+    height: 42px;
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+    
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+    background: #ff5722;
+    transition: 0.2s ease;
+}
+</style>
+</head>
+<body>
+   
+        <div id="login-box">
+      <div class="left-box">
+         <h1><u><b>Search your ride here</u></b></h1>
+            <form action = "search.jsp" method = "POST">
+            
+            <p>Starting point</p>
+            <input type="text" name="starting_point" placeholder="Enter starting point" required>
+           <p>Going To</p>
+<input type="text" name="going_to" placeholder="Enter going to point" required>
+<p>Date</p>
+<input type="date" name="Date" value="yyyy-mm-dd">
+<p>Time</p>
+<input type="time" name="Time" value="hh-mm-ss"><br><br><br>
+
+seats - <select name="seat">
+    <option name="s1" value="1">1</option>
+        <option name="s2" value="2">2</option>
+            <option name="s3" value="3">3</option>
+                <option name="s4" value="4">4</option>
+                    <option name="s5" value="5">5</option>
+</select>
+<br><br>
+<input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+ 
+</body>
+</html>
